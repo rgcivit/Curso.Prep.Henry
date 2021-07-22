@@ -10,6 +10,11 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var array=[];
+  for(var propiedad in objeto){
+    array.push([propiedad, objeto[propiedad]])
+  }
+  return array;
 }
 
 
@@ -57,7 +62,19 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
-}
+ 
+    var matriz= arr.sort(function(a,b){
+      if(a.length > b.length){
+        return 1
+      }
+      if(a.length < b.length){
+        return -1
+      }
+      return 0
+    })
+    return matriz;
+  }
+    
 
 
 function buscoInterseccion(arreglo1, arreglo2){

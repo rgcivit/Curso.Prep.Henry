@@ -1,0 +1,13 @@
+ h1{
+             color:red
+         }   
+         img{
+             width: 400px;
+         }
+         #thirdDiv {
+            height: 600px;
+            width: 500px;
+            background-color: orange;
+            border-color: black;
+            border: 1px solid red;
+         }
